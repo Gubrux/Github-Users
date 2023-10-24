@@ -3,7 +3,6 @@ const API = "https://api.github.com/users/";
 const app = Vue.createApp({
     data() {
         return {
-            message: "Hello Pollo",
             search: null,
             result: null,
             error: null

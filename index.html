@@ -18,7 +18,7 @@
 
         <!-- Content -->
         <article class="content">
-            <h1 class="content__title">{{ message }}</h1>
+            <h1 class="content__title">GitHub Users Search</h1>
 
             <!-- Search -->
             <form class="search" v-on:submit.prevent="doSearch">
@@ -27,7 +27,14 @@
             </form>
 
             <!-- Result -->
-            
+            <div class="result" v-if="result">
+                <h2 class="result__name"></h2>
+                <img src="" alt="icon" class="result__avatar">
+                <p class="result__bio">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet corporis placeat ab quia inventore, atque facere sed praesentium aperiam fugit tempora rem id labore consequuntur nobis vero ipsa eaque consequatur.
+                    <a href="http://www.media.es" class="result__blog"></a>
+                </p>
+            </div>
             <!-- Error -->
             <div v-if="error" class="result__error">{{ error }}</div>
         </article>
